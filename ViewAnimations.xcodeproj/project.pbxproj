@@ -14,6 +14,9 @@
 		3AF8E0A02A0140C00022C4FB /* ViewAnimations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8E09E2A0140C00022C4FB /* ViewAnimations.xcdatamodeld */; };
 		3AF8E0A22A0140C10022C4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF8E0A12A0140C10022C4FB /* Assets.xcassets */; };
 		3AF8E0A52A0140C10022C4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF8E0A32A0140C10022C4FB /* LaunchScreen.storyboard */; };
+		3AF8E0AE2A0140EC0022C4FB /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 3AF8E0AD2A0140EC0022C4FB /* SpringAnimation */; };
+		3AF8E0B32A0145BC0022C4FB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8E0B22A0145BC0022C4FB /* File.swift */; };
+		3AF8E0B52A0146990022C4FB /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8E0B42A0146990022C4FB /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,8 @@
 		3AF8E0A12A0140C10022C4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF8E0A42A0140C10022C4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF8E0A62A0140C10022C4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF8E0B22A0145BC0022C4FB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3AF8E0B42A0146990022C4FB /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF8E0AE2A0140EC0022C4FB /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +64,50 @@
 		3AF8E0942A0140C00022C4FB /* ViewAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				3AF8E0952A0140C00022C4FB /* AppDelegate.swift */,
-				3AF8E0972A0140C00022C4FB /* SceneDelegate.swift */,
-				3AF8E0992A0140C00022C4FB /* ViewController.swift */,
-				3AF8E09B2A0140C00022C4FB /* Main.storyboard */,
+				3AF8E0B62A015CB70022C4FB /* Model */,
+				3AF8E0AF2A01447D0022C4FB /* Supports */,
+				3AF8E0B12A0144AE0022C4FB /* VieControllers */,
+				3AF8E0B02A01449D0022C4FB /* Storyboards */,
 				3AF8E0A12A0140C10022C4FB /* Assets.xcassets */,
-				3AF8E0A32A0140C10022C4FB /* LaunchScreen.storyboard */,
 				3AF8E0A62A0140C10022C4FB /* Info.plist */,
 				3AF8E09E2A0140C00022C4FB /* ViewAnimations.xcdatamodeld */,
 			);
 			path = ViewAnimations;
+			sourceTree = "<group>";
+		};
+		3AF8E0AF2A01447D0022C4FB /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8E0952A0140C00022C4FB /* AppDelegate.swift */,
+				3AF8E0972A0140C00022C4FB /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		3AF8E0B02A01449D0022C4FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8E09B2A0140C00022C4FB /* Main.storyboard */,
+				3AF8E0A32A0140C10022C4FB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3AF8E0B12A0144AE0022C4FB /* VieControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8E0992A0140C00022C4FB /* ViewController.swift */,
+			);
+			name = VieControllers;
+			sourceTree = "<group>";
+		};
+		3AF8E0B62A015CB70022C4FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8E0B22A0145BC0022C4FB /* File.swift */,
+				3AF8E0B42A0146990022C4FB /* DataStore.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +126,9 @@
 			dependencies = (
 			);
 			name = ViewAnimations;
+			packageProductDependencies = (
+				3AF8E0AD2A0140EC0022C4FB /* SpringAnimation */,
+			);
 			productName = ViewAnimations;
 			productReference = 3AF8E0922A0140C00022C4FB /* ViewAnimations.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 3AF8E0892A0140C00022C4FB;
+			packageReferences = (
+				3AF8E0AC2A0140EC0022C4FB /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 3AF8E0932A0140C00022C4FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF8E0B32A0145BC0022C4FB /* File.swift in Sources */,
+				3AF8E0B52A0146990022C4FB /* DataStore.swift in Sources */,
 				3AF8E09A2A0140C00022C4FB /* ViewController.swift in Sources */,
 				3AF8E0A02A0140C00022C4FB /* ViewAnimations.xcdatamodeld in Sources */,
 				3AF8E0962A0140C00022C4FB /* AppDelegate.swift in Sources */,
@@ -297,8 +345,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +353,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AntonAkhmedzyanov.ViewAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,8 +375,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +383,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AntonAkhmedzyanov.ViewAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AF8E0AC2A0140EC0022C4FB /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AF8E0AD2A0140EC0022C4FB /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AF8E0AC2A0140EC0022C4FB /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3AF8E09E2A0140C00022C4FB /* ViewAnimations.xcdatamodeld */ = {
